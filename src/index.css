@@ -11,33 +11,39 @@ main {
   width: 50%;
   margin: 0 auto;
   margin-top: 5rem;
-
 }
 
 h1,
 h2,
 h3,
 h4 {
+  text-shadow: 3px 3px 5px black;
   color: white;
   font-family: "Cinzel", serif;
   text-align: center;
 }
 
+h1{
+  padding-top: 1rem;
+}
+
 footer {
   color: white;
-  background-color: rgb(92, 43, 92);
+  background-color: rgb(129, 55, 12);
   width: 50%;
   margin: auto;
   text-align: center;
+  padding: 0.3rem 0;
+  opacity: 0.8;
 }
-li {
-    margin-left: 20rem;
-    padding: 0;
 
+p {
+  line-height: 2rem;
+  text-align: center;
 }
 
 .roadmap {
-    color: white;
+  color: white;
 }
 
 .banner {
@@ -47,6 +53,7 @@ li {
 
 .tech {
   text-align: center;
+  padding: 1rem;
 }
 
 #backgroundgif {
@@ -66,17 +73,30 @@ li {
   height: 3%;
   padding-top: 6cm;
 }
+/* Avatar */
+#watermark_me {
+  box-shadow: 3px 3px 5px black;
+  border-radius: 50%;
+  height: 125px;
+  width: 125px;
+}
+/* Technologies */
+#logo_1 {
+  font-size: 400%;
+}
 
+#logo_2 {
+  font-size: 400%;
+}
+
+#logo_3 {
+  font-size: 400%;
+}
+/* Footer */
 #linkedin {
   color: ivory;
-  
 }
 
 #linkedin:hover {
-    color: orangered;
-    
-  }
-
-#watermark_me {
-  border-radius: 50%;
+  color: orangered;
 }
