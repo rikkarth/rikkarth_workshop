@@ -11,13 +11,16 @@ main {
   width: 50%;
   margin: 0 auto;
   margin-top: 5rem;
+
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   color: white;
   font-family: "Cinzel", serif;
+  text-align: center;
 }
 
 footer {
@@ -26,6 +29,15 @@ footer {
   width: 50%;
   margin: auto;
   text-align: center;
+}
+li {
+    margin-left: 20rem;
+    padding: 0;
+
+}
+
+.roadmap {
+    color: white;
 }
 
 .banner {
