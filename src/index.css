@@ -3,6 +3,7 @@ body {
   background-image: url("./content/tavern.gif");
   background-repeat: repeat;
   background-size: 80%;
+  background-position-y: -4rem;
 }
 
 main {
@@ -95,8 +96,16 @@ p {
 /* Footer */
 #linkedin {
   color: ivory;
+  cursor:pointer;
 }
 
 #linkedin:hover {
   color: orangered;
+  background-color: rgba(238, 161, 110, 0.2);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+#linkedin:visited{
+  color:rgb(250, 115, 243);
 }
