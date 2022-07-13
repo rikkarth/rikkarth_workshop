@@ -1,2 +1,1 @@
-# website_1
-Portfolio Website
+https://rikkarth.github.io/rikkarth_workshop/
