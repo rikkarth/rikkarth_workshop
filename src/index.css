@@ -74,12 +74,14 @@ h1 {
 }
 
 #linkedin:hover {
+  transition: 0.5s;
   color: orangered;
   padding: 5px;
 }
 
-#linkedin:visited {
-  color: rgb(250, 115, 243);
+#linkedin:active {
+  color: ivory;
+
 }
 /* ========================================= */
 /* Avatar ==================================*/
@@ -121,6 +123,7 @@ table.kanban_table:hover {
 }
 
 #to-do:hover {
+  transition: 0.5s;
   background-color: rgba(235, 211, 80, 0.95);
 }
 
@@ -129,6 +132,7 @@ table.kanban_table:hover {
 }
 
 #progress:hover {
+  transition: 0.5s;
   background-color: rgba(77, 139, 231, 0.95);
 }
 
@@ -138,6 +142,7 @@ table.kanban_table:hover {
 }
 
 #done:hover {
+  transition: 0.5s;
   background-color: rgba(17, 155, 47, 0.95);
 }
 
