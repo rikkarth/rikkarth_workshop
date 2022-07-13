@@ -11,9 +11,19 @@ body {
 main {
   z-index: 80;
   background-color: rgba(59, 52, 52, 0.95);
-  width: 50%;
+  width: 32%;
   margin: 0 auto;
   margin-top: 5rem;
+  border-radius: 1%;
+}
+
+footer {
+  color: white;
+  background-color: rgb(129, 55, 12);
+  margin: auto;
+  text-align: center;
+  padding: 0.3rem 0;
+  opacity: 0.8;
 }
 
 h1,
@@ -30,15 +40,6 @@ h1 {
   padding-top: 1rem;
 }
 
-footer {
-  color: white;
-  background-color: rgb(129, 55, 12);
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  padding: 0.3rem 0;
-  opacity: 0.8;
-}
 
 /* General Classes ============================*/
 .roadmap {
