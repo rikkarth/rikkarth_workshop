@@ -71,12 +71,14 @@ h1 {
 #linkedin {
   color: ivory;
   cursor: pointer;
+  font-style: italic;
 }
 
 #linkedin:hover {
   transition: 0.5s;
-  color: orangered;
+  color: rgb(4, 0, 255);
   padding: 5px;
+  text-decoration: none;
 }
 
 #linkedin:active {
