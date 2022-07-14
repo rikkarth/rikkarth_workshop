@@ -40,7 +40,6 @@ h1 {
   padding-top: 1rem;
 }
 
-
 /* General Classes ============================*/
 .roadmap {
   color: white;
@@ -83,7 +82,6 @@ h1 {
 
 #linkedin:active {
   color: ivory;
-
 }
 /* ========================================= */
 /* Avatar ==================================*/
@@ -117,7 +115,6 @@ table.kanban_table:hover {
   border: none;
   font-family: "Cinzel";
   font-weight: bold;
-
 }
 
 #to-do {
