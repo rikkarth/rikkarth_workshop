@@ -28,6 +28,7 @@ h1,
 h2 {
   font-family: Pixeboy;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 header {
@@ -68,8 +69,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
-  color: #fff
+  gap: 80px;
+  color: #c9c9c9;
 }
 
 footer h2 {
