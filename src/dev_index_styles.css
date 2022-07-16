@@ -1,8 +1,21 @@
+@font-face {
+  font-family: "Pixeboy";
+  src: url(./fonts/Pixeboy-z8XGD.ttf);
+}
+
+body {
+
+}
+
+main {
+
+}
+
 .container {
   display: grid;
+  margin: 0 auto;
   max-width: 900px;
   position: relative;
-  margin: 0 auto;
   gap: 10px;
   grid-template-areas:
     "header header"
@@ -11,16 +24,17 @@
     "footer footer";
   grid-template-columns: 30% 70%;
   grid-template-rows: 110px 50px 600px 200px;
+
 }
 
 h1,
 h2 {
-  font-family: monospace;
+  font-family: Pixeboy;
   text-align: center;
 }
 
 header {
-  background-color: dodgerblue;
+  background-color: darkgrey;
   grid-area: header;
 }
 
@@ -30,7 +44,7 @@ nav {
 }
 
 .left {
-  background-color: dodgerblue;
+  background-color: darkgray;
   grid-area: left;
 }
 
@@ -39,17 +53,63 @@ nav {
   grid-area: right;
 }
 
-footer {
-  background-color: dodgerblue;
-  grid-area: footer;
-
-}
 
 header, nav, section, footer {
-  box-shadow: 2px 2px;
+  
+  
 }
 
 #wallpapervideo {
   background-size: cover;
   position: fixed;
 }
+
+/* Footer & Technologies ==============================*/
+footer {
+  background-color: rgba(128, 128, 128, 0.137);
+  grid-area: footer;
+  text-align: center;
+}
+
+footer > div > h2 {
+  vertical-align: auto;
+  margin-bottom: 0;
+  font-size: 200%;
+}
+.tech {
+  text-align: center;
+}
+
+#logo_1 {
+  font-size: 400%;
+}
+
+#logo_2 {
+  font-size: 400%;
+}
+
+#logo_3 {
+  font-size: 400%;
+}
+/* Footer */
+.linkedin {
+  padding: 10px;
+}
+
+a#linkedin {
+  color: ivory;
+  cursor: pointer;
+  font-size: 150%;
+}
+
+#linkedin:hover {
+  transition: 0.5s;
+  color: rgb(4, 0, 255);
+  text-decoration: none;
+}
+
+#linkedin:active {
+  color: ivory;
+  
+}
+/* ========================================= */
