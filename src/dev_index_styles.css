@@ -4,9 +4,12 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
 }
 
 main {
+  margin: 20px;
 }
 
 .container {
@@ -32,23 +35,48 @@ h2 {
 }
 
 header {
-  background-color: darkgrey;
+  background-color: rgba(128, 128, 128, 0.137);
   grid-area: header;
+  transition: 0.5s ease-out;
+}
+
+header:hover {
+  background-color: rgba(128, 128, 128, 0.247);
+  transform: scale(1.02);
 }
 
 nav {
-  background-color: beige;
+  background-color: rgba(128, 128, 128, 0.137);
   grid-area: nav;
+  transition: 0.5s ease-out;
+}
+
+nav:hover {
+  background-color: rgba(128, 128, 128, 0.247);
+  transform: scale(1.02);
 }
 
 .left {
-  background-color: darkgray;
+  background-color: rgba(128, 128, 128, 0.137);
   grid-area: left;
+  transition: 0.5s ease-out;
+}
+
+.left:hover {
+  background-color: rgba(128, 128, 128, 0.247);
+  transform: scale(1.02);
 }
 
 .right {
-  background-color: beige;
+  background-color: rgba(128, 128, 128, 0.137);
   grid-area: right;
+  transition: 0.5s ease-out;
+}
+
+.right:hover {
+  background-color: rgba(128, 128, 128, 0.247);
+  transform: scale(1.02);
+  
 }
 
 header,
@@ -58,8 +86,11 @@ footer {
 }
 
 #wallpapervideo {
-  background-size: cover;
   position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%
 }
 
 /* Footer & Technologies ==============================*/
@@ -71,6 +102,13 @@ footer {
   align-items: center;
   gap: 80px;
   color: #c9c9c9;
+  transition: 0.5s ease-out;
+}
+
+footer:hover {
+  background-color: rgba(128, 128, 128, 0.247);
+  transform: scale(1.02);
+  
 }
 
 footer h2 {
