@@ -38,6 +38,7 @@ header {
   background-color: rgba(128, 128, 128, 0.137);
   grid-area: header;
   transition: 0.5s ease-out;
+  border-radius: 1%;
 }
 
 header:hover {
@@ -49,6 +50,7 @@ nav {
   background-color: rgba(128, 128, 128, 0.137);
   grid-area: nav;
   transition: 0.5s ease-out;
+  border-radius: 1%;
 }
 
 nav:hover {
@@ -60,6 +62,7 @@ nav:hover {
   background-color: rgba(128, 128, 128, 0.137);
   grid-area: left;
   transition: 0.5s ease-out;
+  border-radius: 1%;
 }
 
 .left:hover {
@@ -71,6 +74,7 @@ nav:hover {
   background-color: rgba(128, 128, 128, 0.137);
   grid-area: right;
   transition: 0.5s ease-out;
+  border-radius: 1%;
 }
 
 .right:hover {
@@ -102,7 +106,7 @@ footer {
   gap: 80px;
   color: #c9c9c9;
   transition: 0.5s ease-out;
-  
+  border-radius: 1%;
 }
 
 footer:hover {
@@ -122,12 +126,11 @@ footer h2 {
 .logo-1,
 .logo-2,
 .logo-3 {
-  font-size: 56px;
+  font-size: 350%;
 }
 /* Footer */
 .social-media {
   text-align: center;
-
 }
 
 a.linkedin {
@@ -136,7 +139,7 @@ a.linkedin {
 }
 
 .fa-linkedin {
-  font-size: 56px;
+  font-size: 350%;
 }
 
 .linkedin:hover {
@@ -149,3 +152,23 @@ a.linkedin {
   color: #0077b5;
 }
 /* ========================================= */
+
+/* Phones */
+@media only screen and (max-width: 480px) {
+  footer {
+    gap: 10px;
+  }
+
+}
+/* Even smaller Devices */
+@media only screen and (max-width: 340px) {
+  .logo-1,
+  .logo-2,
+  .logo-3 {
+  }
+
+  .tech h2,
+  .social-media h2 {
+    display: none;
+  }
+}
