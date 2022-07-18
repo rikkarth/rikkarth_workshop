@@ -18,17 +18,16 @@ main {
 
 .container {
   display: grid;
-  margin: 0 auto;
-  max-width: 900px;
+  margin: 7rem auto;
+  max-width: 700px;
   position: relative;
   gap: 10px;
   grid-template-areas:
     "header header"
-    "nav    nav"
     "left   right"
     "footer footer";
   grid-template-columns: 30% 70%;
-  grid-template-rows: 110px 50px 600px 200px;
+  grid-template-rows: 145px 300px 200px;
 }
 
 h1,
@@ -37,28 +36,36 @@ h2 {
   text-align: center;
   letter-spacing: 2px;
 }
-
+/* HEADER SECTION */
 header {
   background-color: rgba(128, 128, 128, 0.137);
   grid-area: header;
   transition: 0.5s ease-out;
   border-radius: 1%;
+  display: flex;
+  text-align: center;
+ 
 }
 
+.space-invader{
+  z-index: 10;
+  position: absolute;
+  width: 18rem;
+  margin: 2.5rem 10rem;
+}
+
+header h1.myname {
+  z-index: 11;
+  text-shadow: 4px 5px black;
+  font-size: 3rem;
+  color:#c9c9c9;
+  margin: auto 0;
+}
+
+/* =================================================== */
 header:hover {
   background-color: rgba(128, 128, 128, 0.247);
-  transform: scale(1.02);
-}
-
-nav {
-  background-color: rgba(128, 128, 128, 0.137);
-  grid-area: nav;
-  transition: 0.5s ease-out;
-  border-radius: 1%;
-}
-
-nav:hover {
-  background-color: rgba(128, 128, 128, 0.247);
+  box-shadow: 0 0 10px 3px rgba(255, 254, 218, 0.253);
   transform: scale(1.02);
 }
 
@@ -71,6 +78,7 @@ nav:hover {
 
 .left:hover {
   background-color: rgba(128, 128, 128, 0.247);
+  box-shadow: 0 0 10px 3px rgba(255, 254, 218, 0.253);
   transform: scale(1.02);
 }
 
@@ -83,16 +91,11 @@ nav:hover {
 
 .right:hover {
   background-color: rgba(128, 128, 128, 0.247);
+  box-shadow: 0 0 10px 3px rgba(255, 254, 218, 0.253);
   transform: scale(1.02);
 }
 
-header,
-nav,
-section,
-footer {
-}
-
-video#wallpapervideo {
+#wallpapervideo {
   position: fixed;
   top: 0;
   left: 0;
@@ -129,10 +132,6 @@ video#wallpapervideo {
   cursor: pointer;
 }
 
-#youtubevideo1 {
-  width: 100%;
-}
-
 /* Footer & Technologies ==============================*/
 footer {
   background-color: rgba(128, 128, 128, 0.137);
@@ -144,10 +143,12 @@ footer {
   color: #c9c9c9;
   transition: 0.5s ease-out;
   border-radius: 1%;
+  
 }
 
 footer:hover {
   background-color: rgba(128, 128, 128, 0.247);
+  box-shadow: 0 0 10px 3px rgba(255, 254, 218, 0.253);
   transform: scale(1.02);
 }
 
