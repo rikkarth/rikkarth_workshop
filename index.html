@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
     <title>Rikkarth's Portfolio</title>
     <script
       src="https://kit.fontawesome.com/96456ef9a2.js"
@@ -12,6 +13,7 @@
     ></script>
   </head>
   <body>
+    
     <video autoplay muted loop id="wallpapervideo">
       <source src="./src/content/nebula.mp4" type="video/mp4" />
     </video>
@@ -40,6 +42,15 @@
               src="src\content\github2.png"
               alt="github"
           /></a> -->
+          <a
+            title="github.com/rikkarth"
+            target="_blank"
+            href="https://github.com/rikkarth"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <button type="button" onclick="playPacman()">Play</button>
+          
         </section>
         <section class="right">
           <h2>About Me</h2>
@@ -67,11 +78,14 @@
               class="linkedin"
               href="https://www.linkedin.com/in/ricardominamendes/"
               title="Visit me on LinkedIn"
+              target="_blank"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
           </div>
         </footer>
+        <iframe class="pacman" src="https://funhtml5games.com?embed=pacman" style="width:342px;height:490px;border:none;" frameborder="0" scrolling="no"></iframe>
       </div>
     </main>
+    <script src="./src/script.js"></script>
   </body>
 </html>

@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face {
   font-family: "Pixeboy";
   src: url(./fonts/Pixeboy-z8XGD.ttf);
@@ -192,6 +188,22 @@ h2.home:hover {
   cursor: pointer;
 }
 
+.fa-github {
+  box-shadow: 3px 3px 5px black;
+  color: #c9c9c9;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  margin: 10px 10px;
+  transition: 0.5s ease-out;
+}
+
+.fa-github:hover {
+  transform: scale(1.4);
+
+  cursor: pointer;
+}
+
 /* Footer & Technologies ==============================*/
 footer {
   background-color: rgba(128, 128, 128, 0.137);
@@ -251,6 +263,11 @@ a.linkedin {
 .linkedin:active {
   color: #0077b5;
 }
+
+.pacman {
+
+  display: none;
+}
 /* ========================================= */
 
 /* Phones */
@@ -263,6 +280,12 @@ a.linkedin {
     gap: 10px;
   }
 }
+
+  .tech {
+    margin-left: 1rem;
+  }
+
+
 /* Even smaller Devices */
 @media only screen and (max-width: 340px) {
 
@@ -270,14 +293,30 @@ a.linkedin {
     display: none;
   }
 
-
+  .container {
+  grid-template-areas:
+    "header header"
+    "right   right"
+    "footer footer";
+  }
   .right h2 {
     min-width: 100px;
     line-height: 2rem;
+
   }
 
   .tech h2,
   .social-media h2 {
     display: none;
   }
+
+  .left {
+    display: none;
+  }
 }
+
+  .fa-linkedin {
+    margin-right: 1rem;
+  }
+
+  /* SPACE INVADDERS */
