@@ -59,7 +59,7 @@ header {
   width: 18rem;
   margin: 2.5rem 10rem;
 
-  /* -webkit-animation: mover 1s infinite  alternate; */
+  -webkit-animation: mover 1s steps(3) infinite alternate;
   animation: mover 1s steps(3) infinite alternate;
 }
 
@@ -67,11 +67,6 @@ header {
   from { top: 15px; bottom: 0px; }
   to   { bottom: 0; top: -20px; }
 }
-/* 
-@keyframes mover {
-0% { transform: translateY(10px); }
-100% { transform: translateY(-20px); }
-} */
 
 header h1.myname {
   z-index: 11;
