@@ -7,18 +7,25 @@
   src: url(./fonts/Prototype.ttf);
 }
 
-
 body {
   margin: 0;
   padding: 0;
   font-family: Pixeboy;
 }
 
-main {
-  margin: 20px;
+.wrap {
+  object-fit: cover;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0
 }
 
+
+
 .container {
+  z-index: 1;
   display: grid;
   margin: 7rem auto;
   max-width: 700px;
@@ -45,11 +52,9 @@ header {
   transition: 0.5s ease-out;
   border-radius: 1%;
   display: flex;
- 
- 
 }
 
-.space-invader{
+.space-invader {
   z-index: 10;
   position: absolute;
   width: 18rem;
@@ -60,18 +65,23 @@ header {
 }
 
 @-webkit-keyframes mover {
-  from { top: 15px; bottom: 0px; }
-  to   { bottom: 0; top: -20px; }
+  from {
+    top: 15px;
+    bottom: 0px;
+  }
+  to {
+    bottom: 0;
+    top: -20px;
+  }
 }
 
 header h1.myname {
   z-index: 11;
-  text-shadow: 2px 2px 5px #FF0000, 0 0 5px #0000FF;
+  text-shadow: 2px 2px 5px #ff0000, 0 0 5px #0000ff;
   font-size: 3rem;
-  color:#c9c9c9;
+  color: #c9c9c9;
   margin: auto 0;
 }
-
 
 header:hover {
   background-color: rgba(128, 128, 128, 0.247);
@@ -81,9 +91,9 @@ header:hover {
 
 h2.home {
   display: flex;
-  text-shadow: 2px 2px 5px #FF0000, 0 0 5px #0000FF;
+  text-shadow: 2px 2px 5px #ff0000, 0 0 5px #0000ff;
   font-size: 2.3rem;
-  color:#c9c9c9;
+  color: #c9c9c9;
   margin: auto;
   margin-left: 8rem;
   transition: 0.5s ease-out;
@@ -120,7 +130,7 @@ h2.home:hover {
 }
 
 .right::-webkit-scrollbar {
-  display:none;
+  display: none;
 }
 
 .right:hover {
@@ -131,14 +141,13 @@ h2.home:hover {
 
 .right h2 {
   color: #c9c9c9;
-  text-shadow: 2px 2px 5px #FF0000, 0 0 5px #0000FF;
+  text-shadow: 2px 2px 5px #ff0000, 0 0 5px #0000ff;
   letter-spacing: 2px;
   line-height: 1.1rem;
   font-size: 3rem;
   text-align: right;
   margin: 1rem 0.5rem;
   min-width: 200px;
-
 }
 
 .right p {
@@ -151,12 +160,22 @@ h2.home:hover {
   font-family: Prototype, sans-serif, Arial;
 }
 
-#wallpapervideo {
-  position: fixed;
-  top: 0;
-  left: 0;
+.video-1 {
+  display: flex;
+  margin-bottom: 0;
+  min-width: 100%;
+  position: absolute;
+}
+
+.video-2 {
+  display: flex;
+  position: absolute;
+
+
+  margin-top: 0;
   min-width: 100%;
   min-height: 100%;
+ 
 }
 
 #watermark_me {
@@ -215,7 +234,6 @@ footer {
   color: #c9c9c9;
   transition: 0.5s ease-out;
   border-radius: 1%;
-  
 }
 
 footer:hover {
@@ -230,18 +248,19 @@ footer h2 {
 }
 
 .tech {
-  text-shadow: 2px 2px 5px #FF0000, 0 0 5px #0000FF;
+  text-shadow: 2px 2px 5px #ff0000, 0 0 5px #0000ff;
   text-align: center;
 }
 
 .logo-1,
 .logo-2,
-.logo-3 {
+.logo-3,
+.logo-4 {
   font-size: 350%;
 }
 /* Footer */
 .social-media {
-  text-shadow: 2px 2px 5px #FF0000, 0 0 5px #0000FF;
+  text-shadow: 2px 2px 5px #ff0000, 0 0 5px #0000ff;
   text-align: center;
 }
 
@@ -264,7 +283,6 @@ a.linkedin {
   color: #0077b5;
 }
 
-
 /* ========================================= */
 
 /* Phones */
@@ -272,34 +290,31 @@ a.linkedin {
   .space-invader {
     display: none;
   }
-  
+
   footer {
     gap: 10px;
   }
 }
 
-  .tech {
-    margin-left: 1rem;
-  }
-
+.tech {
+  margin-left: 1rem;
+}
 
 /* Even smaller Devices */
 @media only screen and (max-width: 340px) {
-
   .myname {
     display: none;
   }
 
   .container {
-  grid-template-areas:
-    "header header"
-    "right   right"
-    "footer footer";
+    grid-template-areas:
+      "header header"
+      "right   right"
+      "footer footer";
   }
   .right h2 {
     min-width: 100px;
     line-height: 2rem;
-
   }
 
   .tech h2,
@@ -312,8 +327,8 @@ a.linkedin {
   }
 }
 
-  .fa-linkedin {
-    margin-right: 1rem;
-  }
+.fa-linkedin {
+  margin-right: 1rem;
+}
 
-  /* SPACE INVADDERS */
+/* SPACE INVADDERS */
