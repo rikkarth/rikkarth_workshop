@@ -35,10 +35,10 @@ gsap.to("#watermark_me", {
   scrollTrigger: {
     trigger: "#watermark_me",
     start: "top 100px",
-    scrub: 1,
+    scrub: 2,
     toggleActions: "restart pause reverse pause",
   },
-  x: 450,
+  x: 570,
   rotation: 360,
   duration: 10,
 });
