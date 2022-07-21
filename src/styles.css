@@ -8,6 +8,7 @@
 }
 
 body {
+  background-color: black;
   margin: 0;
   padding: 0;
   font-family: Pixeboy;
@@ -281,6 +282,41 @@ a.linkedin {
   color: #0077b5;
 }
 
+.scroll-downs {
+  
+  margin-left: auto;
+  margin-right: 5%;
+  margin-top: auto;
+  margin-bottom: auto;
+  width :34px;
+  height: 55px;
+  
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
 /* ========================================= */
 
 /* Phones */
@@ -297,6 +333,13 @@ a.linkedin {
   .container {
     width: 80%;
   }
+
+  .scroll-downs{
+     position: absolute;
+     bottom: 32.5%;
+     left: 9%;
+    }
+
   .space-invader {
     display: none;
   }
@@ -310,12 +353,17 @@ a.linkedin {
   margin-left: 1rem;
 }
 
+
+
 /* Even smaller Devices */
 @media only screen and (max-width: 340px) {
   .myname {
     display: none;
   }
 
+  .scroll-downs {
+    display: none;
+  }
   .container {
     grid-template-areas:
       "header header"
@@ -335,10 +383,10 @@ a.linkedin {
   .left {
     display: none;
   }
-}
+
 
 .fa-linkedin {
   margin-right: 1rem;
 }
-
+}
 /* SPACE INVADDERS */

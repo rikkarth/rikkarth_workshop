@@ -12,6 +12,7 @@ gsap.to(".wrap", {
   },
 });
 
+
 let tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".wrap",
