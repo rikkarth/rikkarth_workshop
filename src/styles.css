@@ -283,15 +283,14 @@ a.linkedin {
 }
 
 .scroll-downs {
-  
   margin-left: auto;
   margin-right: 5%;
   margin-top: auto;
   margin-bottom: auto;
-  width :34px;
+  width: 34px;
   height: 55px;
-  
 }
+
 .mousey {
   width: 3px;
   padding: 10px 15px;
@@ -301,6 +300,7 @@ a.linkedin {
   opacity: 0.75;
   box-sizing: content-box;
 }
+
 .scroller {
   width: 3px;
   height: 10px;
@@ -308,13 +308,22 @@ a.linkedin {
   background-color: #fff;
   animation-name: scroll;
   animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   animation-iteration-count: infinite;
 }
+
 @keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
 }
 
 /* ========================================= */
@@ -334,11 +343,11 @@ a.linkedin {
     width: 80%;
   }
 
-  .scroll-downs{
-     position: absolute;
-     bottom: 32.5%;
-     left: 9%;
-    }
+  .scroll-downs {
+    position: absolute;
+    bottom: 32.5%;
+    left: 9%;
+  }
 
   .space-invader {
     display: none;
@@ -352,8 +361,6 @@ a.linkedin {
 .tech {
   margin-left: 1rem;
 }
-
-
 
 /* Even smaller Devices */
 @media only screen and (max-width: 340px) {
@@ -384,9 +391,8 @@ a.linkedin {
     display: none;
   }
 
-
-.fa-linkedin {
-  margin-right: 1rem;
-}
+  .fa-linkedin {
+    margin-right: 1rem;
+  }
 }
 /* SPACE INVADDERS */

@@ -42,3 +42,13 @@ gsap.to("#watermark_me", {
   rotation: 360,
   duration: 10,
 });
+
+gsap.to(".scroll-downs", {
+  scrollTrigger: {
+    trigger: "#scroll-downs",
+    scrub: 2,
+    toggleActions: "restart pause reverse pause",
+  },
+  opacity: 0,
+  duration: 10,
+}) 
